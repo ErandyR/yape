@@ -1,0 +1,17 @@
+@import 'variables';
+
+.anchoImagen {
+  height: 50vh;
+}
+.colorAmarillo {
+  background-color: $color-amarillo;
+}
+.margen-bottom {
+  margin-bottom: 4%;
+}
+
+.altoBtn{
+  height: 5vh;
+  font-size: 4vh;
+  align-items: center;
+}
