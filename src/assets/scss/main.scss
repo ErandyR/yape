@@ -1,17 +1,34 @@
 @import 'variables';
 
-.anchoImagen {
-  height: 50vh;
-}
+
 .colorAmarillo {
   background-color: $color-amarillo;
 }
-.margen-bottom {
-  margin-bottom: 4%;
-}
+
 
 .altoBtn{
-  height: 5vh;
-  font-size: 4vh;
+  height: 4vh;
+  font-size: 3vh;
   align-items: center;
+  margin-top: 10%;
 }
+div.carousel {
+  min-height: 700px;
+}
+
+.anchoContenedorImagen{
+  height: 500px;
+  img{
+    height: 400px;
+    margin-top: 10%;
+  }
+}
+
+// div.carousel-slider{
+//   div.carousel-item{
+//     p.texto{
+//       font-size: 3vh;
+//       font-weight: bold;
+//     }
+//   }
+// }

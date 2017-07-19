@@ -5,19 +5,21 @@ const sass = require('gulp-sass');
 
 var config = {
   source: './src/',
-  dist: './public'
+  dist: './public/'
 };
 var paths = {
   html: "**/*.html",
   assets: "assets/",
   sass: "scss/**/.scss",
-  mainSass: "scss/main.scss"
+  mainSass: "scss/main.scss",
+  viewHTML1: "view/view.html"
 }
 var sources = {
   assets: config.source + paths.assets,
   html: config.source + paths.html,
   sass: paths.assets + paths.sass,
-  rootSass: config.source + paths.assets + paths.mainSass
+  rootSass: config.source + paths.assets + paths.mainSass,
+  viewHTML1: config.source + paths.assets + paths.viewHTML1
 };
 gulp.task('html', function() {
   gulp.src(sources.html)
@@ -31,3 +33,8 @@ gulp.task('sass', function() {
     }).on("error", sass.logError))
     .pipe(gulp.dest('./public/assets/css'));
 });
+gulp.task('view', function() {
+  gulp.src(sources.viewHTML1)
+    .pipe(gulp.dest(config.dist + paths.assets + 'views'))
+})
+gulp.task('llamarTarea', ['html', 'sass', 'view']);
