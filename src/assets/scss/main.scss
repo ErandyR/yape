@@ -1,27 +1,30 @@
 @import 'variables';
-
-
+@import 'html2';
 .colorAmarillo {
-  background-color: $color-amarillo;
+    background-color: $color-amarillo;
 }
 
-
-.altoBtn{
-  height: 4vh;
-  font-size: 3vh;
-  align-items: center;
-  margin-top: 10%;
-}
-div.carousel {
-  min-height: 700px;
-}
-
-.anchoContenedorImagen{
-  height: 500px;
-  img{
-    height: 400px;
+.altoBtn {
+    height: 4vh;
+    font-size: 2vh;
+    display: flex;
+    align-items: center;
     margin-top: 10%;
-  }
+    background-color: $color-amarillo;
+    width: 30%;
+    margin-left: 33%;
+}
+
+div.carousel {
+    min-height: 700px;
+}
+
+.anchoContenedorImagen {
+    height: 500px;
+    img {
+        height: 400px;
+        margin-top: 10%;
+    }
 }
 
 // div.carousel-slider{
