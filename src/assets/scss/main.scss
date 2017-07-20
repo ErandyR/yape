@@ -1,5 +1,7 @@
 @import 'variables';
 @import 'html2';
+@import 'html3';
+@import 'html4';
 .colorAmarillo {
     background-color: $color-amarillo;
 }
@@ -27,11 +29,4 @@ div.carousel {
     }
 }
 
-// div.carousel-slider{
-//   div.carousel-item{
-//     p.texto{
-//       font-size: 3vh;
-//       font-weight: bold;
-//     }
-//   }
-// }
+

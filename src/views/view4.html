@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../static2/materialize-css/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>Crea tu usuario</title>
+</head>
+
+<body>
+    <section class="container">
+        <div class="row imgValidarNum">
+            <div class="center col s12">
+                <img src="../img/icons/lockone.png" alt="validarNumero">
+                <h2><strong>Crea tu usuario Yape</strong></h2>
+                <p>Ingresa un nombre, email y clave de usuario</p>
+            </div>
+        </div>
+        <div class="row center contenedorForm">
+            <form class="col s12 center">
+                <div class="row center">
+                    <div class="input-field col s10 offset-s1 left-align">
+                        <img src="../img/icons/user.png" alt="nombre" class="imgCuenta">
+                        <input placeholder="Nombre" id="first_name" type="text" class="validate">
+                    </div>
+                    <div class="input-field col s10 offset-s1 left-align">
+                        <img src="../img/icons/message-gray.png" alt="correo" class="imgCuenta">
+                        <input placeholder="correo@ejemplo.com" id="email" type="email" class="validate">
+                    </div>
+                    <div class="input-field col s10 offset-s1 left-align">
+                        <img src="../img/icons/lock.png" alt="clave" class="imgCuentaLock">
+                        <input placeholder="Ingresa clave de 6 digitos" id="password" type="password" class="validate">
+                    </div>
+                </div>
+            </form>
+            <p>Cuida esta clave como oro, es tu acceso a Yape.</p>
+        </div>
+        <div class="contenedorBotonContinuar center">
+            <a id="btnContinuar" class="waves-effect waves-light btn altoBtn disabled" href="view5.html">Crear cuenta</a>
+        </div>
+    </section>
+    <script src="../../static2/jquery/dist/jquery.min.js"></script>
+    <script src="../../static2/materialize-css/dist/js/materialize.min.js"></script>
+    <script type="text/javascript" src="../assets/js/crear-cuenta.js"></script>
+</body>
+
+</html>

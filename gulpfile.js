@@ -14,7 +14,8 @@ var paths = {
     mainSass: "scss/main.scss",
     views: "views/",
     viewHTML2: "views/view2.html",
-    viewHTML3: "views/view3.html"
+    viewHTML3: "views/view3.html",
+    viewHTML4: "views/view4.html"
 }
 var sources = {
     assets: config.source + paths.assets,
@@ -22,7 +23,8 @@ var sources = {
     sass: paths.assets + paths.sass,
     rootSass: config.source + paths.assets + paths.mainSass,
     viewHTML2: config.source + paths.viewHTML2,
-    viewHTML3: config.source + paths.viewHTML3
+    viewHTML3: config.source + paths.viewHTML3,
+    viewHTML4: config.source + paths.viewHTML4
 };
 gulp.task('html', function () {
     gulp.src(sources.html)
@@ -44,4 +46,8 @@ gulp.task('view3', function () {
     gulp.src(sources.viewHTML3)
         .pipe(gulp.dest(config.dist + paths.views));
 });
-gulp.task('llamarTareas', ['html', 'sass', 'view2', 'view3']);
+gulp.task('view4', function () {
+    gulp.src(sources.viewHTML4)
+        .pipe(gulp.dest(config.dist + paths.views));
+});
+gulp.task('llamarTareas', ['html', 'sass', 'view2', 'view3', 'view4']);

@@ -10,19 +10,21 @@
 
 <body>
     <section class="container">
-        <div class="row imgValidarNum">
+        <div class="row imgValidarNumHTML3">
             <div class="center col s12">
-                <img src="../img/icons/phone.png" alt="codigo">
+                <img src="../img/icons/message.png" alt="codigo">
                 <h2><strong>Ahora ingresa tu código</strong></h2>
-                <p>Enviaremos un SMS con el código de validación al número</p>
+                <p class="parrafoNumero">Enviaremos un SMS con el código de validación al número</p>
+                <p id="numeroTel"></p>
+
             </div>
         </div>
         <div class="row center contenedorForm">
             <form class="col s12 center">
                 <div class="row center">
-                    <div class="input-field col s10 offset-s1 left-align">
+                    <div class="input-field col s10 offset-s1 left-align row">
                         <img src="../img/icons/lock.png" alt="lock">
-                        <input id="codigoValidacion" type="num" class="validate">
+                        <input id="codigoValidacion" type="num" class="validate col s12" placeholder="- - - - - -" size="6">
                     </div>
                 </div>
             </form>
@@ -30,7 +32,7 @@
     </section>
     <script src="../../static2/jquery/dist/jquery.min.js"></script>
     <script src="../../static2/materialize-css/dist/js/materialize.min.js"></script>
-    <script type="text/javascript" src="../assets/js/app.js"></script>
+    <script type="text/javascript" src="../assets/js/validacion-codigo.js"></script>
 </body>
 
 </html>
