@@ -27,7 +27,7 @@ function continuarRegistro() {
         function (respuesta) {
             console.log(respuesta.data.code);
             var $codigo = respuesta.data.code;
-            alert("Este es tu codigo: " + $codigo);
+            alert("Este es tu código: " + $codigo);
             localStorage.setItem("phone", respuesta.data.phone);
             localStorage.setItem("code", respuesta.data.code);
         });
